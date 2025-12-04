@@ -1,4 +1,4 @@
-#seleziona il più grande tra i tre numeri
+#seleziona il più piccolo tra i quattro numeri
 
 a = float(input("inserisci a: "))
 b = float(input("inserisci b: "))
@@ -26,5 +26,6 @@ else:
            min = d
          else:
             min = a
+
 
 print ("tra ",a,",",b," , ",c," e ",d," il minore è ",min) 
