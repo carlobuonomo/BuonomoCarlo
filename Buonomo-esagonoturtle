@@ -1,0 +1,26 @@
+import turtle 
+
+screen = turtle.Screen() 
+screen.setup(width=400, height=300)
+screen.title("Art")
+turtle1 = turtle.Turtle()
+turtle1.speed(1)
+
+screen.colormode(255)
+
+R = 255
+G = 182
+B = 193
+screen.bgcolor((R,G,B))
+
+turtle1.turtlesize(1)
+turtle1.pensize(5)
+turtle1.begin_fill()
+turtle1.fillcolor("black")
+
+for b in range(6): 
+    turtle1.pendown()
+    turtle1.forward(50)
+    turtle1.right(60)
+    turtle1.end_fill()
+screen.mainloop()
