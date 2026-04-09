@@ -1,0 +1,18 @@
+from microbit import *
+lightsOn = False
+bat = 0
+while True:
+    if microphone.was_event(SoundEvent.LOUD):
+       lightsOn = True
+       bat = bat+1
+       if lightsOn:
+           display.show(Image.HEART)
+       else:
+           display.clear()
+    sleep(100)
+    if bat==2:
+       if microphone.was_event(SoundEvent.LOUD):
+           lightsOn = False
+           bat = 0
+       else:
+           display.clear()
